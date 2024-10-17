@@ -1,0 +1,14 @@
+## Title: |cff0091edNaowh|r|cffffa300UI|r
+## Notes: NaowhUI
+## Author: rootkit1337
+## Version: 20241017.01
+## SavedVariables: NaowhDB
+## Interface: 110002
+## AddonCompartmentFunc: NaowhUI_AddonCompartmentFunc
+## IconTexture: Interface\AddOns\NaowhUI\Core\Media\Textures\LogoAddon
+
+embeds.xml
+
+Core\Load.xml
+
+Mainline\Load.xml

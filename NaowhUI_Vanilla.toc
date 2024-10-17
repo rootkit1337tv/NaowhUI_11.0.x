@@ -1,0 +1,12 @@
+## Title: |cff0091edNaowh|r|cffffa300UI|r
+## Notes: NaowhUI
+## Author: rootkit1337
+## Version: 20241017.01
+## SavedVariables: NaowhDB
+## Interface: 11504
+
+embeds.xml
+
+Core\Load.xml
+
+Vanilla\Load.xml

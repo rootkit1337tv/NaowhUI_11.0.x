@@ -1,0 +1,3 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/">
+	<Include file ="Installer\Load_Installer.xml"/>
+</Ui>

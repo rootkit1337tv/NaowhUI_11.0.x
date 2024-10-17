@@ -1,0 +1,9 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/">
+	<Script file="BigWigsData.lua"/>
+	<Script file="DetailsData.lua"/>
+	<Script file="ElvUIData.lua"/>
+	<Script file="HidingBarData.lua"/>
+	<Script file="NameplateAurasData.lua"/>
+	<Script file="PlaterData.lua"/>
+	<Include file ="WeakAuras\Load_WeakAuras.xml"/>
+</Ui>

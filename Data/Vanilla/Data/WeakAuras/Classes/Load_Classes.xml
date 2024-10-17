@@ -1,0 +1,11 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/">
+	<Script file="DruidData.lua"/>
+	<Script file="HunterData.lua"/>
+	<Script file="MageData.lua"/>
+	<Script file="PaladinData.lua"/>
+	<Script file="PriestData.lua"/>
+	<Script file="RogueData.lua"/>
+	<Script file="ShamanData.lua"/>
+	<Script file="WarlockData.lua"/>
+	<Script file="WarriorData.lua"/>
+</Ui>
