@@ -136,7 +136,6 @@ local function ImportPlater(addon)
 		end)
 	end
 
-	PlaterDB.profiles.Naowh = nil
 	Plater.ImportAndSwitchProfile(Profile, DecompressedData, false, false, true)
 	SetupComplete(addon)
 end
@@ -166,7 +165,7 @@ function SetupTable.Details(import, addon)
 	local Details = Details
 
 	if import then
-		_detalhes_global.profiles.Naowh = nil
+		_detalhes_global.__profiles.Naowh = nil
 		Details:ImportProfile(NUI.DetailsData, Profile, false, false, true)
 
 		for i, v in Details:ListInstances() do
