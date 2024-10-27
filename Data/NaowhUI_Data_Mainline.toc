@@ -1,8 +1,8 @@
 ## Title: |cff0091edNaowh|r|cffffa300UI|r_Data
 ## Notes: NaowhUI_Data
 ## Author: rootkit1337
-## Version: 20241017.01
-## Interface: 110002
+## Version: 20241027.01
+## Interface: 110005
 ## RequiredDeps: NaowhUI
 ## LoadOnDemand: 1
 ## IconTexture: Interface\AddOns\NaowhUI\Core\Media\Textures\LogoAddon
