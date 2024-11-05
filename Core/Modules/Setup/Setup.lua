@@ -37,7 +37,7 @@ local function SetupComplete(addon)
 end
 
 local function ImportBigWigs(addon)
-	BigWigsAPI:RegisterProfile(NUI.title, NUI.BigWigsData, Profile, function(callback)
+	BigWigsAPI.RegisterProfile(NUI.title, NUI.BigWigsData, Profile, function(callback)
 		if not callback then
 			return
 		end
