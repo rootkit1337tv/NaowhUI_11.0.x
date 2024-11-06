@@ -1,7 +1,7 @@
 ## Title: |cff0091edNaowh|r|cffffa300UI|r
 ## Notes: NaowhUI
 ## Author: rootkit1337
-## Version: 20241106.01
+## Version: 20241106.02
 ## SavedVariables: NaowhDB
 ## Interface: 40400
 
