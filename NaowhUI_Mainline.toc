@@ -1,7 +1,7 @@
 ## Title: |cff0091edNaowh|r|cffffa300UI|r
 ## Notes: NaowhUI
 ## Author: rootkit1337
-## Version: 20241106.02
+## Version: 20241106.03
 ## SavedVariables: NaowhDB
 ## Interface: 110005
 ## AddonCompartmentFunc: NaowhUI_AddonCompartmentFunc

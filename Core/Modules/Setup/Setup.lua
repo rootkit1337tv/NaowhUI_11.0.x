@@ -165,13 +165,12 @@ function SetupTable.Details(import, addon)
 	local Details = Details
 
 	if import then
+		Details:EraseProfile(Profile)
 		Details:ImportProfile(NUI.DetailsData, Profile, false, false, true)
 
 		for i, v in Details:ListInstances() do
 			DetailsFramework.table.copy(v.hide_on_context, NUI.DetailsAutomationData[i].hide_on_context)
 		end
-
-		Details:SendEvent("DETAILS_PROFILE_APPLYED", Profile)
 
 		SetupComplete(addon)
 
