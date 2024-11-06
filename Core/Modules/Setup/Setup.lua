@@ -37,7 +37,7 @@ local function SetupComplete(addon)
 end
 
 local function ImportBigWigs(addon)
-	BigWigsAPI:ImportProfileString(NUI.title, NUI.BigWigsData, Profile, function(callback)
+	BigWigsAPI.RegisterProfile(NUI.title, NUI.BigWigsData, Profile, function(callback)
 		if not callback then
 			return
 		end
@@ -165,7 +165,7 @@ function SetupTable.Details(import, addon)
 	local Details = Details
 
 	if import then
-		_detalhes_global.__profiles.Naowh = nil
+		Details:ResetProfile(Profile)
 		Details:ImportProfile(NUI.DetailsData, Profile, false, false, true)
 
 		for i, v in Details:ListInstances() do
