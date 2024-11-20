@@ -5,47 +5,19 @@ NUI.HidingBarData = {
 	["config"] = {
 	["addFromDataBroker"] = true,
 	["mbtnSettings"] = {
-	["LibDBIcon10_Details"] = {
-	["tstmp"] = 1727709735,
-	},
-	["LibDBIcon10_DetailsStreamer"] = {
-	["tstmp"] = 1727709735,
-	},
-	["LibDBIcon10_WeakAuras"] = {
-	["tstmp"] = 1727709735,
-	},
-	["LibDBIcon10_Plater"] = {
-	["tstmp"] = 1727709735,
-	},
-	["LibDBIcon10_MethodRaidTools"] = {
-	["tstmp"] = 1727709735,
-	},
-	["LibDBIcon10_BigWigs"] = {
-	["tstmp"] = 1727709735,
-	},
 	},
 	["btnSettings"] = {
-	["MRT"] = {
-	["tstmp"] = 1727709735,
-	},
-	["WeakAuras"] = {
-	["tstmp"] = 1727709735,
-	},
 	["HidingBar"] = {
-	["tstmp"] = 1727709735,
-	},
-	["BigWigs"] = {
-	["tstmp"] = 1727709735,
+	["tstmp"] = 1732117966,
 	},
 	},
 	["grabMinimap"] = true,
 	["grabMinimapAfterN"] = 1,
-	["customGrabList"] = {
-	},
 	["ombGrabQueue"] = {
 	},
+	["customGrabList"] = {
+	},
 	["ignoreMBtn"] = {
-	"GatherMatePin",
 	},
 	},
 	["name"] = "Naowh",
@@ -98,29 +70,29 @@ NUI.HidingBarData = {
 	["gapSize"] = 0,
 	["interceptTooltip"] = true,
 	["buttonDirection"] = {
-	["V"] = 0,
 	["H"] = 0,
+	["V"] = 0,
 	},
 	["borderOffset"] = 4,
 	["omb"] = {
-	["hide"] = true,
+	["size"] = 31,
 	["distanceToBar"] = 0,
 	["lock"] = true,
 	["anchor"] = "right",
 	["barDisplacement"] = 0,
 	["canGrabbed"] = false,
-	["size"] = 31,
+	["hide"] = true,
 	},
 	["buttonSize"] = 31,
 	["frameStrata"] = 0,
 	["lineBorderSize"] = 2,
-	["lock"] = true,
-	["fade"] = false,
+	["lineTexture"] = "Solid",
+	["borderSize"] = 16,
 	["fadeOpacity"] = 0.2,
 	["orientation"] = 0,
 	["rangeBetweenBtns"] = 0,
-	["borderSize"] = 16,
-	["lineTexture"] = "Solid",
+	["fade"] = false,
+	["lock"] = true,
 	},
 	["name"] = "Bar 1",
 	},

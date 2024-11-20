@@ -253,7 +253,34 @@ function SetupTable.NameplateAuras(import, addon)
 	if import then
 		SetupComplete(addon)
 
-		NameplateAurasAceDB.profiles[Profile] = NUI.NameplateAurasData
+		local decoded = LibDeflate:DecodeForPrint(NUI.NameplateAurasData)
+		if (decoded == nil) then
+			return
+		end
+
+		local decompressed = LibDeflate:DecompressDeflate(decoded);
+		if (decompressed == nil) then
+			return
+		end
+
+		local success, deserialized = LibSerialize:Deserialize(decompressed);
+		if (not success) then
+			return
+		end
+
+		if not NameplateAurasAceDB.profiles[Profile] then
+			NameplateAurasAceDB.profiles[Profile] = {}
+		end
+
+		for k,v in pairs(deserialized) do
+			NameplateAurasAceDB.profiles[Profile][k] = v
+		end
+
+		for key in pairs(NameplateAurasAceDB.profiles[Profile]) do
+			if (deserialized[key] == nil) then
+				ameplateAurasAceDB.profiles[Profile][key] = nil;
+			end
+		end
 	end
 
 	if not IsProfileExisting(NameplateAurasAceDB) then
@@ -270,9 +297,52 @@ function SetupTable.OmniCD(import, addon)
 	local Database = AceDB:New(OmniCDDB)
 
 	if import then
-		SetupComplete(addon)
+		local function Decode(encodedData)
+			local compressedData = LibDeflate:DecodeForPrint(encodedData)
+			if not compressedData then
+				return
+			end
+		
+			local serializedData = LibDeflate:DecompressDeflate(compressedData)
+			if not serializedData then
+				return
+			end
+		
+			local appendage
+			serializedData = gsub(serializedData, "%^%^(.+)", function(str)
+				appendage = str
+				return "^^"
+			end)
+		
+			if not appendage or not strfind(appendage, PS_VERSION) then
+				return
+			end
+		
+			appendage = gsub(appendage, "^" .. PS_VERSION, "")
+			local profileType, profileKey = strsplit(",", appendage, 2)
+		
+			local success, profileData = LibSerialize:Deserialize(serializedData)
+			if not success then
+				return
+			end
+		
+			return profileType, profileKey, profileData
+		end
 
-		OmniCDDB.profiles[Profile] = NUI.OmniCDData
+		local profileType, profileKey, profileData = Decode(NUI.OmniCDData)
+		if not profileData then
+			return
+		end
+
+		if not OmniCDDB.profiles[Profile] then
+			OmniCDDB.profiles[Profile] = {}
+		end
+
+		OmniCDDB.profiles[Profile] = profileData
+
+
+
+		SetupComplete(addon)
 	end
 
 	if not IsProfileExisting(OmniCDDB) then

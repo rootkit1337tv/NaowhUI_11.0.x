@@ -362,6 +362,20 @@ NUI.Options = {
 						NUI:ImportWeakAura(nil, nil, NUI.RaidData)
 					end
 				},
+				generic = {
+					name = "Season 1",
+					desc = "Import the Generic WeakAura",
+					hidden = function()
+						if NUI.Cata or NUI.Classic then
+							return true
+						end
+					end,
+					type = "execute",
+					func = function()
+						NUI:LoadData()
+						NUI:ImportWeakAura(nil, nil, NUI.GenericData)
+					end
+				},
 				season1 = {
 					name = "Season 1",
 					desc = "Import the Season 1 WeakAura",
