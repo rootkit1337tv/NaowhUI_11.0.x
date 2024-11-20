@@ -6,7 +6,7 @@ local function AreAddOnsDisabled()
 		["BigWigs"] = true,
 		["Details"] = true,
 		["HidingBar"] = true,
-		["MRT"] = true,
+		--["MRT"] = true,
 		["NameplateAuras"] = true,
 		["OmniCD"] = true,
 		["Plater"] = true,
@@ -19,7 +19,7 @@ local function AreAddOnsDisabled()
 		OmniCD = nil
 		WarpDeplete = nil
 	elseif NUI.Classic then
-		AddOns.MRT = nil
+		--AddOns.MRT = nil
 		OmniCD = nil
 		WarpDeplete = nil
 	end
@@ -89,6 +89,7 @@ NUI.Options = {
 						NUI:InstallComplete(true)
 					end
 				},
+				--[[
 				mrt = {
 					name = "MRT",
 					desc = "Setup MRT",
@@ -102,7 +103,7 @@ NUI.Options = {
 						SE:Setup("MRT", true)
 						NUI:InstallComplete(true)
 					end
-				},
+				},]]
 				nameplateauras = {
 					name = "NameplateAuras",
 					desc = "Setup NameplateAuras",

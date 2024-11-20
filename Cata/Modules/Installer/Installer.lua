@@ -82,6 +82,7 @@ I.Installer = {
 			PluginInstallFrame.Option1:SetScript("OnClick", function() SE:Setup("HidingBar") end)
 			PluginInstallFrame.Option1:SetText("Setup HidingBar")
 		end,
+		--[[
 		[6] = function()
 			if not NUI:IsAddOnEnabled("MRT") then
 				PluginInstallFrame.SubTitle:SetText("MRT is not enabled, enable it to unlock this step.")
@@ -95,6 +96,7 @@ I.Installer = {
 			PluginInstallFrame.Option1:SetScript("OnClick", function() SE:Setup("MRT", true) end)
 			PluginInstallFrame.Option1:SetText("Setup MRT")
 		end,
+		]]
 		[7] = function()
 			if not NUI:IsAddOnEnabled("NameplateAuras") then
 				PluginInstallFrame.SubTitle:SetText("NameplateAuras is not enabled, enable it to unlock this step.")
@@ -171,7 +173,7 @@ I.Installer = {
 		[3] = "BigWigs",
 		[4] = "Details",
 		[5] = "HidingBar",
-		[6] = "MRT",
+		--[6] = "MRT",
 		[7] = "NameplateAuras",
 		[8] = "Plater",
 		[9] = "General WeakAuras",
