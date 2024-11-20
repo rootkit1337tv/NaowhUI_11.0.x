@@ -97,7 +97,7 @@ I.Installer = {
 			PluginInstallFrame.Option1:SetText("Setup MRT")
 		end,
 		]]
-		[7] = function()
+		[6] = function()
 			if not NUI:IsAddOnEnabled("NameplateAuras") then
 				PluginInstallFrame.SubTitle:SetText("NameplateAuras is not enabled, enable it to unlock this step.")
 
@@ -110,7 +110,7 @@ I.Installer = {
 			PluginInstallFrame.Option1:SetScript("OnClick", function() SE:Setup("NameplateAuras", true) end )
 			PluginInstallFrame.Option1:SetText("Setup NameplateAuras")
 		end,
-		[8] = function()
+		[7] = function()
 			if not NUI:IsAddOnEnabled("Plater") then
 				PluginInstallFrame.SubTitle:SetText("Plater is not enabled, enable it to unlock this step.")
 
@@ -123,7 +123,7 @@ I.Installer = {
 			PluginInstallFrame.Option1:SetScript("OnClick", function() SE:Setup("Plater", true) end)
 			PluginInstallFrame.Option1:SetText("Setup Plater")
 		end,
-		[9] = function()
+		[8] = function()
 			if not NUI:IsAddOnEnabled("WeakAuras") then
 				PluginInstallFrame.SubTitle:SetText("WeakAuras is not enabled, enable it to unlock this step.")
 
@@ -145,7 +145,7 @@ I.Installer = {
 			end)
 			PluginInstallFrame.Option2:SetText("Tier 11")
 		end,
-		[10] = function()
+		[9] = function()
 			if not NUI:IsAddOnEnabled("WeakAuras") then
 				PluginInstallFrame.SubTitle:SetText("WeakAuras is not enabled, enable it to unlock this step.")
 
@@ -158,7 +158,7 @@ I.Installer = {
 			PluginInstallFrame.Option1:SetScript("OnClick", function() NUI:OpenToCategory() end)
 			PluginInstallFrame.Option1:SetText("Open Settings")
 		end,
-		[11] = function()
+		[10] = function()
 			PluginInstallFrame.SubTitle:SetText("Installation Complete")
 			PluginInstallFrame.Desc1:SetText("You have completed the installation process.")
 			PluginInstallFrame.Desc2:SetText("Please click on the button below to reload your UI.")
@@ -174,11 +174,11 @@ I.Installer = {
 		[4] = "Details",
 		[5] = "HidingBar",
 		--[6] = "MRT",
-		[7] = "NameplateAuras",
-		[8] = "Plater",
-		[9] = "General WeakAuras",
-		[10] = "Class WeakAuras",
-		[11] = "Installation Complete",
+		[6] = "NameplateAuras",
+		[7] = "Plater",
+		[8] = "General WeakAuras",
+		[9] = "Class WeakAuras",
+		[10] = "Installation Complete",
 	},
 	StepTitlesColor = {1, 1, 1},
 	StepTitlesColorSelected = {0, 179/255, 1},
