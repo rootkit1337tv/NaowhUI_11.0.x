@@ -466,6 +466,7 @@ function SetupTable.NameplateAuras(import, addon)
 	local Database = AceDB:New(NameplateAurasAceDB)
 
 	if import then
+		local LibSerialize = LibStub("LibSerialize")
 		SetupComplete(addon)
 
 		local decoded = LibDeflate:DecodeForPrint(NUI.NameplateAurasData)
@@ -493,7 +494,7 @@ function SetupTable.NameplateAuras(import, addon)
 
 		for key in pairs(NameplateAurasAceDB.profiles[Profile]) do
 			if (deserialized[key] == nil) then
-				ameplateAurasAceDB.profiles[Profile][key] = nil;
+				NameplateAurasAceDB.profiles[Profile][key] = nil;
 			end
 		end
 	end
