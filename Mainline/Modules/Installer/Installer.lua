@@ -82,7 +82,6 @@ I.Installer = {
 			PluginInstallFrame.Option1:SetScript("OnClick", function() SE:Setup("HidingBar") end)
 			PluginInstallFrame.Option1:SetText("Setup HidingBar")
 		end,
-		--[[
 		[6] = function()
 			if not NUI:IsAddOnEnabled("MRT") then
 				PluginInstallFrame.SubTitle:SetText("MRT is not enabled, enable it to unlock this step.")
@@ -96,8 +95,7 @@ I.Installer = {
 			PluginInstallFrame.Option1:SetScript("OnClick", function() SE:Setup("MRT", true) end)
 			PluginInstallFrame.Option1:SetText("Setup MRT")
 		end,
-		]]
-		[6] = function()
+		[7] = function()
 			if not NUI:IsAddOnEnabled("NameplateAuras") then
 				PluginInstallFrame.SubTitle:SetText("NameplateAuras is not enabled, enable it to unlock this step.")
 
@@ -110,7 +108,7 @@ I.Installer = {
 			PluginInstallFrame.Option1:SetScript("OnClick", function() SE:Setup("NameplateAuras", true) end )
 			PluginInstallFrame.Option1:SetText("Setup NameplateAuras")
 		end,
-		[7] = function()
+		[8] = function()
 			if not NUI:IsAddOnEnabled("OmniCD") then
 				PluginInstallFrame.SubTitle:SetText("OmniCD is not enabled, enable it to unlock this step.")
 
@@ -123,7 +121,7 @@ I.Installer = {
 			PluginInstallFrame.Option1:SetScript("OnClick", function() SE:Setup("OmniCD", true) end)
 			PluginInstallFrame.Option1:SetText("Setup OmniCD")
 		end,
-		[8] = function()
+		[9] = function()
 			if not NUI:IsAddOnEnabled("Plater") then
 				PluginInstallFrame.SubTitle:SetText("Plater is not enabled, enable it to unlock this step.")
 
@@ -136,7 +134,7 @@ I.Installer = {
 			PluginInstallFrame.Option1:SetScript("OnClick", function() SE:Setup("Plater", true) end)
 			PluginInstallFrame.Option1:SetText("Setup Plater")
 		end,
-		[9] = function()
+		[10] = function()
 			if not NUI:IsAddOnEnabled("WarpDeplete") then
 				PluginInstallFrame.SubTitle:SetText("WarpDeplete is not enabled, enable it to unlock this step.")
 
@@ -149,7 +147,7 @@ I.Installer = {
 			PluginInstallFrame.Option1:SetScript("OnClick", function() SE:Setup("WarpDeplete", true) end)
 			PluginInstallFrame.Option1:SetText("Setup WarpDeplete")
 		end,
-		[10] = function()
+		[11] = function()
 			if not NUI:IsAddOnEnabled("WeakAuras") then
 				PluginInstallFrame.SubTitle:SetText("WeakAuras is not enabled, enable it to unlock this step.")
 
@@ -183,7 +181,7 @@ I.Installer = {
 			end)
 			PluginInstallFrame.Option4:SetText("Season 1")
 		end,
-		[11] = function()
+		[12] = function()
 			if not NUI:IsAddOnEnabled("WeakAuras") then
 				PluginInstallFrame.SubTitle:SetText("WeakAuras is not enabled, enable it to unlock this step.")
 
@@ -196,7 +194,7 @@ I.Installer = {
 			PluginInstallFrame.Option1:SetScript("OnClick", function() NUI:OpenToCategory() end)
 			PluginInstallFrame.Option1:SetText("Open Settings")
 		end,
-		[12] = function()
+		[13] = function()
 			PluginInstallFrame.SubTitle:SetText("Installation Complete")
 			PluginInstallFrame.Desc1:SetText("You have completed the installation process.")
 			PluginInstallFrame.Desc2:SetText("Please click on the button below to reload your UI.")
@@ -211,14 +209,14 @@ I.Installer = {
 		[3] = "BigWigs",
 		[4] = "Details",
 		[5] = "HidingBar",
-		--[6] = "MRT",
-		[6] = "NameplateAuras",
-		[7] = "OmniCD",
-		[8] = "Plater",
-		[9] = "WarpDeplete",
-		[10] = "General WeakAuras",
-		[11] = "Class WeakAuras",
-		[12] = "Installation Complete",
+		[6] = "MRT",
+		[7] = "NameplateAuras",
+		[8] = "OmniCD",
+		[9] = "Plater",
+		[10] = "WarpDeplete",
+		[11] = "General WeakAuras",
+		[12] = "Class WeakAuras",
+		[13] = "Installation Complete",
 	},
 	StepTitlesColor = {1, 1, 1},
 	StepTitlesColorSelected = {0, 179/255, 1},

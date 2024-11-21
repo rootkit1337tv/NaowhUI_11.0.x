@@ -7,9 +7,6 @@ NUI.HidingBarData = {
 	["mbtnSettings"] = {
 	},
 	["btnSettings"] = {
-	["HidingBar"] = {
-	["tstmp"] = 1732117966,
-	},
 	},
 	["grabMinimap"] = true,
 	["grabMinimapAfterN"] = 1,
